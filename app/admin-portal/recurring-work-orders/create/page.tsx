@@ -56,7 +56,7 @@ export default function CreateRecurringWorkOrder() {
   const [showAdvancedRecurrence, setShowAdvancedRecurrence] = useState(false);
   const [showAdvancedInvoice, setShowAdvancedInvoice] = useState(false);
 
-  const RECURRENCE_PATTERN_OPTIONS = ['SEMIANNUALLY', 'QUARTERLY', 'MONTHLY', 'BI-MONTHLY', 'BI-WEEKLY'] as const;
+  const RECURRENCE_PATTERN_OPTIONS = ['SEMIANNUALLY', 'QUARTERLY', 'MONTHLY', 'BI-MONTHLY', 'BI-WEEKLY', 'WEEKLY'] as const;
 
   const [formData, setFormData] = useState({
     clientId: '',
@@ -284,6 +284,7 @@ const handleLocationSelect = (locationId: string) => {
     else if (label === 'MONTHLY') { type = 'monthly'; interval = 1; }
     else if (label === 'BI-MONTHLY') { type = 'monthly'; interval = 2; }
     else if (label === 'BI-WEEKLY') { type = 'weekly'; interval = 2; }
+    else if (label === 'WEEKLY') { type = 'weekly'; interval = 1; }
     setFormData({
       ...formData,
       recurrencePatternLabel: label,

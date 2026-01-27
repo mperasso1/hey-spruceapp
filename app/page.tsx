@@ -1,9 +1,11 @@
+'use client';
+
 import Link from 'next/link';
 import Logo from '@/components/ui/logo';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-600 via-violet-600 to-purple-800">
+    <div className="min-h-screen bg-gradient-to-br from-rose-400 via-purple-400 to-indigo-500">
       <div className="container mx-auto px-4 py-16">
         <div className="text-center mb-16">
           <div className="flex justify-center mb-4">
