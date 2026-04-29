@@ -123,6 +123,9 @@ export default function AdminDashboard() {
 
         {/* Main Content */}
         <div className="p-6 space-y-6">
+          <h1 className="text-2xl font-semibold text-gray-900">
+            Welcome to your GroundOps admin portals
+          </h1>
           {/* Calendar Section */}
           <AdminCalendar />
 
